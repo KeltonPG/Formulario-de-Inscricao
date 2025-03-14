@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --cor-base: rgba(33, 53, 166, 1);
+  --hover-azul: rgb(50, 71, 192);
+  --cor-secundaria1: #ff6600;
+  --cor-secundaria2: #e43a12;
+  --cinza: #0000001c;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/img/Capa.png);
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.back-button {
+  margin-bottom: 10px;
+}
+.back-button button {
+  border: none;
+  background-color: var(--cor-base);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.back-button button:hover {
+  background-color: var(--hover-azul);
+}
+.back-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+.form-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-base);
+  padding: 3.5rem;
+  overflow: hidden;
+}
+
+.form-image img {
+  width: 31rem;
+  margin-bottom: 10px;
+}
+
+.form-image .form-image2 {
+  width: 15rem;
+}
+
+.form {
+  width: 50%;
+  overflow: auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: top;
+  align-items: flex-start;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.endereco {
+  display: flex;
+  flex-direction: column;
+}
+
+.endereco p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.endereco .form-section-group {
+  display: flex;
+  gap: 5px;
+}
+
+#genero {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px var(--cinza);
+}
+
+.trilhas-header-pri {
+  font-size: 16px;
+  font-weight: 600;
+}
+.trilhas-header-pri p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+}
+
+.form-section input {
+  margin: 0.5rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px var(--cinza);
+}
+.form-section input:hover {
+  background-color: #eeeeee75;
+}
+.form-section input:focus-visible {
+  outline: 1px solid var(--cor-secundaria1);
+}
+
+.termos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.termos input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.termos label {
+  cursor: pointer;
+}
+
+.termos a {
+  color: #ff4500;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.termos a:hover {
+  text-decoration: underline;
+}
+
+.last-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 2.5rem;
+}
+
+.last-buttons button {
+  padding: 0.62rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.93rem;
+  font-weight: 500;
+}
+
+.last-buttons .cancelar {
+  background-color: white;
+  border: 2px solid var(--cor-secundaria1);
+  color: var(--cor-secundaria1);
+}
+
+.last-buttons .cancelar:hover {
+  background-color: var(--cor-secundaria2);
+  color: white;
+}
+
+.last-buttons .inscricao {
+  background-color: var(--cor-secundaria2);
+  border: none;
+  color: white;
+}
+
+.last-buttons .inscricao:hover {
+  background-color: var(--cor-secundaria1);
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.file-upload-label img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.form::-webkit-scrollbar {
+  display: none;
+}
+
+.trilhas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.trilha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  width: 256px;
+  height: 120px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.trilha span {
+  text-align: center;
+  display: block;
+  font-weight: 500;
+}
+.trilha img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+input[type="radio"]:checked + label.trilha {
+  border-color: var(--cor-secundaria1);
+}
+
+input[type="radio"]:checked + label.trilha::before {
+  content: "✔";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--cor-secundaria1);
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none;
+  }
+  .container {
+    width: 50%;
+  }
+  .form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .input-form {
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .form {
+    width: 100%;
+    overflow-y: auto;
+    height: auto;
+  }
+  .form-header {
+    position: relative;
+    z-index: 1;
+  }
+  .input-form {
+    padding-right: 0;
+    max-height: 8rem;
+  }
+}
